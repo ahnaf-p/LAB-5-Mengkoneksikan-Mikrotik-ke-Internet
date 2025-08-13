@@ -15,12 +15,13 @@ Selasa 12 Agustus 2025
   6. Jika berhasil, hasilnya akan reply.
 
 #  Konfigurasi Mikrotik ke internet dengan IP static   
-  1. Buat IP Address untuk ether1, **IP > Addresses > +**
-     
-  2. 
-  3. Jika sudah, di setting IP windows di Control Panel, masukan IP secara manual, masukan IP yang masih 1 network
-     IP 192.168.88.2 karna IP gatewaynya 192.168.88.1 SubMask 255.255.255.0 karna /24 dan DNS nya isi 8.8.8.8
-  4. Sekarang Client bisa terhubung ke Internet
+  1. Buat IP Address untuk ether1, **IP > Addresses > +**, pastikan IP nya satu network dengan IP Gateway dari ISP.
+     ![ipaddress]()
+  2. Selanjutnya masukan gateway, **IP > route > +**
+     ![gerbang]()
+  3. Setting DNS
+  4. Jalankan terminal dan coba ping ke 8.8.8.8 untuk pengujiannya
+  5. Jika berhasil, maka hasilnya akan reply
 
 # Kesimpulan
-  Dynamic routing cocok untuk awam karna client mendapat IP secara otomatis dan cocok untuk jaringan berskala besar karna tidak perlu setting IP satu-satu. Sedangkan Static Routing tidak cocok untuk jaringan berskala besar.
+  Dynamic IP cocok untuk awam karna client mendapat IP secara otomatis. Sedangkan Static IP kurang cocok untuk pengguna awam, karna diperlukan pengetahuan dasar Mikrotik/Jaringan .
