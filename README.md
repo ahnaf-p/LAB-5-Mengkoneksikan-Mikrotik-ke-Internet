@@ -2,7 +2,7 @@
 Selasa 12 Agustus 2025
   
 # Konfigurasi Mikrotik ke Internet dengan IP dynamic  
-![topo](topoly.png)  
+![topo](topo.png)  
   1. Pasang kabel sesuai topologi diatas. **Interfaces > Interface list**  
   2. Ganti nama Interface agar lebih mudah  
      Ether-1-WAN (untuk mendapat internet dari ISP)  
@@ -16,7 +16,7 @@ Selasa 12 Agustus 2025
 ![g](ping.PNG)  
 
 #  Konfigurasi Mikrotik ke internet dengan IP static   
-![t](topo.png)
+![t](topoly.png)
   1. Buat IP Address untuk ether1, **IP > Addresses > +**, pastikan IP nya satu network dengan IP Gateway dari ISP.  
      ![ipaddress](ipg.PNG)  
   2. Selanjutnya masukan gateway, **IP > route > +**  
